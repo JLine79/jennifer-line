@@ -1,0 +1,36 @@
+/** Pink Sea Projects Header **/
+
+.pinksea-image{
+  background-image: url('../../img/pink-sea-header.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 350px;
+}
+
+p.pinkseaintro {
+  color: #666699;
+  padding-left: 25px;
+  padding-top: 25px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h3.pinkseaintro {
+  font-family: 'Nunito', sans-serif;
+  color: #666699;
+  text-align: center;
+  font-size:50px;
+  padding-top: 25px;
+}
+
+a.pinkseaintro {
+  text-decoration: none;
+  color: #666699;
+}
+
+.internal-link a{
+  font-weight: bold;
+  text-decoration: none;
+  color:gray;
+}

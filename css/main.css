@@ -1,0 +1,481 @@
+/*** BASE STYLES ***/
+/*** font-family: 'Montserrat', sans-serif; font-family: 'Nunito', sans-serif; ***/
+
+*{
+  box-sizing: border-box;
+}
+
+.row::after {
+  content:"";
+  clear:both;
+  display:table;
+}
+
+[class*="col-"]{
+  float:left;
+  padding: 25px;
+}
+
+/*** For mobile phones ***/
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+/*** For tablets: ***/
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+/*** For desktop: ***/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 601px){
+  body {
+    background: #d9d9d9;
+    color:#666699;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  body a {
+    font-weight: bold;
+    text-decoration: none;
+    color:gray;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    background: #d9d9d9;
+    color:#666699;
+    font-family: 'Montserrat', sans-serif;
+    font-size: auto;
+    text-align: center;
+  }
+}
+
+/*** HEADER ***/
+
+header {
+  text-align: center;
+  background-image: url('../img/pink-sea-header.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 350px;
+}
+
+header h1{
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  color: #666699;
+}
+
+header h2{
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 25px;
+}
+
+header p{
+  text-align: left;
+  padding-left: 25px;
+}
+
+header a{
+  text-decoration: none;
+  color: #666699;
+}
+
+
+
+/*** If the screen is 600px or less, remove <header.intro> text ***/
+
+@media all and (max-width: 600px){
+  .mobhide {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px){
+  .intro {
+    clear: both;
+    color: #666699;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    text-align:center;
+    width:auto;
+  }
+}
+
+/*** NAVIGATION ***/
+
+#about-me, #services, #contact, #portfolio, #history {
+  height: auto;
+  padding: inherit;
+}
+
+nav {
+  text-align: center;
+  padding-right: 40px;
+  overflow: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 30px;
+  }
+
+nav ul li a {
+    color: #666699;
+    float:left;
+    font-size: auto;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: justify;
+  }
+
+.menu-hover a:hover{
+  background: #fc52e8;
+  color: #ffffff;
+}
+
+/** For smaller screens remove padding and center navigation menu **/
+
+@media screen and (max-width: 600px) {
+  nav ul li a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  ul p {
+    padding-left: 0px;
+  }
+}
+
+/** Subheader for site pages **/
+
+.subheader{
+  background-color: inherit;
+  line-height: 30px;
+}
+
+.subheader h2{
+  text-align: center;
+}
+
+.subheader p{
+  text-align: left;
+}
+
+/*** ABOUT ***/
+
+#about h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  height: auto;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  background: #fc52e8
+}
+
+#about p {
+  color: #666699;
+  font-size: 20px;
+  line-height: 40px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin: 5px;
+}
+
+/*** SERVICES ***/
+
+#services {
+  background: #ffffff;
+  line-height: 40px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+#services ul{
+  list-style-type: none;
+}
+
+#services img {
+  display: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding-bottom: 30px;
+}
+
+#services h3 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: auto;
+  width: auto;
+}
+
+#services p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.emphasis {
+  background: #fc52e8;
+}
+
+/*** CONTACT ***/
+
+#contact {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#contact-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+#contact p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.contact ul {
+  list-style: none;
+  text-align: center;
+}
+
+.contact ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 25px;
+}
+
+/*** Desktop icon size ***/
+
+@media only screen and (min-width: 960px)  and (max-width: 1140px){
+
+  body {min-width:960px;}
+
+  [class^="icon"] {
+    background-position:-20px 0;
+    height:60px;
+    width:60px;}
+  }
+
+  /*** Tablets icon size ***/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+  body {min-width:768px;}
+
+  [class^="icon"] {
+    background-position:-32px 0px;
+    height:45px;
+    width:45px;}
+  }
+
+  /*** Mobile icon size ***/
+
+  @media only screen and (min-width: 10px) and (max-width: 767px) {
+
+    body {min-width:10px;}
+
+    [class^="icon"] {
+      background-position:-50px 0px;
+      height:35px;
+      width:35px;}
+  }
+
+/** HOME BUTTON **/
+
+.home{
+  text-decoration: none;
+  color: #666699;
+  padding-left: 35px;
+}
+
+/** Portfolio Page **/
+
+.navbar {
+  float: left;
+  background: #ffffff;
+  width: 100%;
+}
+
+.navbar ul li{
+  display: block;
+  text-align: left;
+  font-size: auto;
+  font-weight: normal;
+  padding-left: 0px;
+}
+
+.top{
+  text-decoration: none;
+  color: #666699;
+  padding-left: 35px;
+}
+
+/** HOSTEE MANIFESTO PROJECT**/
+
+.holstee {
+  background-color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: space-around;
+}
+
+.light-emphasis {
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	font-size: 18px;
+	font-variant: small-caps;
+}
+
+.strong-emphasis {
+	color: #660066;
+	font-size: 25px;
+	text-transform: capitalize;
+}
+
+.box {
+  color: black;
+  font-size: 16px;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  text-align:center;
+}
+
+.full {
+  flex-basis: 81%;
+}
+
+.half {
+  flex-basis: 40%;
+}
+
+.quarter {
+  flex-basis: 40%;
+  align-self:stretch;
+  width: 20%;
+}
+
+.gloria {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: bold;
+}
+
+.concert {
+  font-family: 'Concert One', cursive;
+  font-size: 20px;
+}
+
+.merienda {
+  font-family: 'Merienda', cursive;
+}
+
+.architects {
+  font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+
+.pink {
+	background: pink;
+}
+
+.blue {
+	background: blue;
+}
+
+.yellow {
+	background: yellow;
+}
+
+.green {
+	background: #04fb67;
+}
+
+.turquoise {
+	background: #48f2f2;
+}
+
+/** History **/
+
+.history p{
+  text-align: left;
+}
+
+.history-icon {
+  float: left;
+  padding-right: 15px;
+  padding-top: 25px;
+  padding-left: 15px;
+}
+
+#education, #data, #projectmgt, #facilitation, #people, #housing {
+  height: auto;
+  padding-left: 25px;
+  text-align: left;
+}
+
+#education, #data, #projectmgt, #facilitation, #people, #housing img{
+  padding-top: 25px;
+}
+
+#education ul{
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 75px;
+}
+
+#data, #facilitation, #housing{
+  background-color: white;
+}
