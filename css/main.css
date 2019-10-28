@@ -1,19 +1,24 @@
 /** BASE STYLES **/
 /** font-family: 'Montserrat', sans-serif; font-family: 'Nunito', sans-serif; **/
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #13505B;
   color:#ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   line-height: 45px;
+  padding: 15px;
 }
 
-  body a {
-    font-weight: bold;
-    text-decoration: none;
-    color:#ffffff;
-  }
+body a {
+  font-weight: bold;
+  text-decoration: none;
+  color:#ffffff;
+}
 
 /*** HEADER ***/
 
@@ -112,6 +117,10 @@ nav ul li a {
   padding: 20px 20px 20px 0px;
 }
 
+.services img{
+  padding: 15px 15px 15px 5px;
+}
+
 /** SERVICES: Mobiles **/
 
 @media all and (max-width: 500px){
@@ -145,24 +154,136 @@ nav ul li a {
     flex-flow: row nowrap;
     justify-content: space-around;
     padding-top: 35px;
-    align-items:stretch;
+    padding-bottom: 35px;
   }
 
   .third-width{
-    align-self: : center;
+    align-self: flex-start;
     flex-basis: 30%;
     line-height: 45px;
+    padding-left: 30px;
   }
+}
+
+.box{
+  box-sizing: content-box;
+  width: 30%;
+  height: 90%;
+  border: solid black;
 }
 
 /** INTRO **/
 
-/** FOR MOBILES **/
+/** INTRO FOR MOBILES **/
 
 .intro{
   display: flex;
-
+  flex-flow: column;
+  flex-basis: 100%;
 }
+
+/** INTRO FOR TABLETS **/
+
+@media all and (min-width: 600px){
+  .intro{
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: 100%;
+  }
+}
+
+/** INTRO FOR DESKTOP **/
+
+@media all and (min-width: 850px){
+  .intro{
+    background-color: #040404;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-start;
+    padding: 20px 10px 10px 20px;
+  }
+}
+
+.intro img{
+  width: 40%;
+  height:auto;
+  padding: 15px;
+}
+
+.intro p{
+  padding-top: 10px;
+  line-height: 55px;
+}
+
+/*** CONTACT ***/
+
+.contact {
+  background-color: #D7D9CE;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.contact p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.contact ul {
+  list-style: none;
+  text-align: center;
+}
+
+.contact ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 25px;
+}
+
+/*** Desktop icon size ***/
+
+@media only screen and (min-width: 960px)  and (max-width: 1140px){
+
+  body {min-width:960px;}
+
+  [class^="icon"] {
+    background-position:-20px 0;
+    height:60px;
+    width:60px;}
+  }
+
+  /*** Tablets icon size ***/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+  body {min-width:768px;}
+
+  [class^="icon"] {
+    background-position:-32px 0px;
+    height:45px;
+    width:45px;}
+  }
+
+  /*** Mobile icon size ***/
+
+  @media only screen and (min-width: 10px) and (max-width: 767px) {
+
+    body {min-width:10px;}
+
+    [class^="icon"] {
+      background-position:-50px 0px;
+      height:35px;
+      width:35px;}
+  }
+
 /*** ABOUT ***/
 
 #about h2 {
@@ -223,73 +344,7 @@ nav ul li a {
   background: #fc52e8;
 }
 
-/*** CONTACT ***/
 
-#contact {
-  text-align: center;
-  padding-top: 50px;
-}
-
-#contact-img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 0px;
-  padding-top: 20px;
-}
-
-#contact p {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: left;
-}
-
-.contact ul {
-  list-style: none;
-  text-align: center;
-}
-
-.contact ul li {
-  display: inline-block;
-  text-align: center;
-  padding: 25px;
-}
-
-/*** Desktop icon size ***/
-
-@media only screen and (min-width: 960px)  and (max-width: 1140px){
-
-  body {min-width:960px;}
-
-  [class^="icon"] {
-    background-position:-20px 0;
-    height:60px;
-    width:60px;}
-  }
-
-  /*** Tablets icon size ***/
-
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-
-  body {min-width:768px;}
-
-  [class^="icon"] {
-    background-position:-32px 0px;
-    height:45px;
-    width:45px;}
-  }
-
-  /*** Mobile icon size ***/
-
-  @media only screen and (min-width: 10px) and (max-width: 767px) {
-
-    body {min-width:10px;}
-
-    [class^="icon"] {
-      background-position:-50px 0px;
-      height:35px;
-      width:35px;}
-  }
 
 /** HOME BUTTON **/
 
