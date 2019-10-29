@@ -5,13 +5,31 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #13505B;
-  color:#ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  line-height: 45px;
-  padding: 15px;
+/** MOBILES **/
+
+@media all and (max-width: 500px){
+  body {
+    background: #13505B;
+    color:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 35px;
+    padding: 5px;
+  }
+}
+
+/** TABLET & DESKTOP **/
+
+@media all and (min-width: 600px){
+
+  body {
+    background: #13505B;
+    color:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 45px;
+    padding: 5px;
+  }
 }
 
 body a {
@@ -26,30 +44,69 @@ header {
   text-align: center;
 }
 
-h1{
-  font-family: 'Nunito', sans-serif;
-  font-size: 40px;
+/** Headings: MOBILES **/
+
+@media all and (max-width: 500px){
+  h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+  }
+
+  h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 0px;
+  }
+
+  h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+  }
 }
 
-h2{
-  font-family: 'Nunito', sans-serif;
-  font-size: 30px;
-  text-align: left;
-  padding-left: 25px;
+/** HEADINGS: Tablets **/
+
+@media all and (min-width: 600px){
+
+  h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+  }
+
+  h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 5px;
+  }
+
+  h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+  }
 }
 
-h3{
-  font-family: 'Nunito', sans-serif;
-  font-size: 20px;
-}
+/** HEADINGS: Desktops **/
 
-p{
-  text-align: left;
-  padding-left: 25px;
-}
+@media all and (min-width: 850px){
 
-a{
-  text-decoration: none;
+  h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+  }
+
+  h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+  }
 }
 
 /** To hide elements on smaller screens **/
@@ -60,77 +117,101 @@ a{
   }
 }
 
-/*** NAVIGATION ***/
+/** NAVIGATION **/
 
-#contact, #portfolio, #history {
-  height: auto;
-  padding: inherit;
-}
+/** MOBILES **/
 
-nav {
-  background-color: #0C7489;
-  font-size: 25px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
+@media all and (max-width: 500px){
 
-nav ul li {
-  display: inline-flex;
-  padding: 30px;
-}
-
-nav ul li a {
-  font-size: auto;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: capitalize;
-  text-align: justify;
-}
-
-.menu-hover a:hover{
-  background: #040404;
-}
-
-/** For smaller screens remove padding and center navigation menu **/
-
-@media all and (max-width: 600px) {
   nav{
+    background-color: #040404;
     display: flex;
     flex-flow: column;
+    font-size: 20px;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    padding: 0px 15px 0px 25px;
+  }
+
+  nav ul li a{
+    font-size: auto;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}
+
+/** TABLETS & DESKTOPS **/
+
+@media all and (min-width: 600px){
+
+  nav {
+    background-color: #119da4;
+    font-size: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    padding: 30px;
   }
 
   nav ul li a {
-    flex-basis: 100%;
-    justify-content: flex-start;
+    font-size: auto;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: justify;
   }
 
-  ul p {
-    padding-left: 0px;
+  .menu-hover a:hover{
+    background: #040404;
   }
 }
 
-/** SERVICES **/
+/** HOME PAGE: SERVICES **/
 
-.services ul{
-  list-style-type: none;
-  padding: 20px 20px 20px 0px;
-}
-
-.services img{
-  padding: 15px 15px 15px 5px;
-}
-
-/** SERVICES: Mobiles **/
+/** SERVICES: MOBILES **/
 
 @media all and (max-width: 500px){
+
   .services{
-    background-color: #119DA4;
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
-    flex-basis: 100%
+    padding: 10px;
+  }
+
+  .services h3{
+    font-size: 20px;
+  }
+
+  .services ul{
+    list-style-type: none;
+    padding-left: 0px;
+  }
+
+  .services img{
+    padding: 5px;
+    align-self: center;
+  }
+
+  .third-width{
+    align-self: flex-start;
+    flex-basis: 100%;
+    line-height: 30px;
+    padding: 0px;
+  }
+
+  .box{
+    box-sizing: content-box;
+    width: 90%;
+    height: 100%;
+    border: solid black;
+    padding: 10px;
   }
 }
 
@@ -138,10 +219,35 @@ nav ul li a {
 
 @media all and (min-width: 600px){
   .services{
-    display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
+  }
+
+  .services h3{
+    font-size: 30px;
+  }
+
+  .services ul{
+    list-style-type: none;
+    padding-left: 0px;
+  }
+
+  .services img{
+    padding: 5px;
+    align-self: center;
+  }
+
+  .third-width{
+    line-height: 40px;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .box{
+    box-sizing: content-box;
+    width: 97%;
+    height: 100%;
+    border: solid black;
+    padding: 10px;
   }
 }
 
@@ -163,218 +269,194 @@ nav ul li a {
     line-height: 45px;
     padding-left: 30px;
   }
-}
 
-.box{
-  box-sizing: content-box;
-  width: 30%;
-  height: 90%;
-  border: solid black;
-}
-
-/** INTRO **/
-
-/** INTRO FOR MOBILES **/
-
-.intro{
-  display: flex;
-  flex-flow: column;
-  flex-basis: 100%;
-}
-
-/** INTRO FOR TABLETS **/
-
-@media all and (min-width: 600px){
-  .intro{
-    display: flex;
-    flex-flow: row nowrap;
-    flex-basis: 100%;
+  .box{
+    box-sizing: content-box;
+    width: 30%;
+    height: 90%;
+    border: solid black;
+    border-width: 10px;
   }
 }
 
-/** INTRO FOR DESKTOP **/
+/** HOMEPAGE: INTRO **/
+
+/** INTRO: MOBILES **/
+
+@media all and (max-width: 500px){
+
+  .intro{
+    background-color: #040404;
+    display: flex;
+    flex-flow: column;
+    flex-basis: 100%;
+    padding: 10px;
+  }
+
+  .intro img{
+    align-self: center;
+    width: 90%;
+    height:auto;
+    padding: 10px;
+  }
+
+  .intro p{
+    padding: 0px 10px 0px 10px;
+    line-height: 40px;
+  }
+}
+
+/** INTRO: TABLETS **/
+
+@media all and (min-width: 600px){
+  .intro{
+    background-color: #040404;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+  }
+
+  .intro img{
+    align-self: flex-start;
+    width: 40%;
+    height:auto;
+    padding: 10px;
+  }
+
+  .intro p{
+    padding: 0px 15px 0px 15px;
+    line-height: 50px;
+  }
+}
+
+/** INTRO: DESKTOP **/
 
 @media all and (min-width: 850px){
   .intro{
     background-color: #040404;
     display: flex;
-    flex-basis: 100%;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     padding: 20px 10px 10px 20px;
   }
-}
 
-.intro img{
-  width: 40%;
-  height:auto;
-  padding: 15px;
-}
+  .intro img{
+    width: 50%;
+    height:auto;
+    padding: 15px;
+  }
 
-.intro p{
-  padding-top: 10px;
-  line-height: 55px;
+  .intro p{
+    padding-top: 10px;
+    line-height: 55px;
+  }
 }
 
 /*** CONTACT ***/
 
-.contact {
-  background-color: #D7D9CE;
-  text-align: center;
-  padding-top: 20px;
-}
+/** CONTACT: MOBILES **/
 
-.contact-img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 0px;
-  padding-top: 20px;
-}
-
-.contact p {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: left;
-}
-
-.contact ul {
-  list-style: none;
-  text-align: center;
-}
-
-.contact ul li {
-  display: inline-block;
-  text-align: center;
-  padding: 25px;
-}
-
-/*** Desktop icon size ***/
-
-@media only screen and (min-width: 960px)  and (max-width: 1140px){
-
-  body {min-width:960px;}
-
-  [class^="icon"] {
-    background-position:-20px 0;
-    height:60px;
-    width:60px;}
+@media all and (max-width: 500px){
+  .contact {
+    display: flex;
   }
 
-  /*** Tablets icon size ***/
+  .contact-img {
+    max-width: 100%;
+    height: auto;
+  }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .contact ul {
+    list-style-type: none;
+  }
 
-  body {min-width:768px;}
+  .contact ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+}
+
+/** CONTACT: DESKTOP **/
+
+@media all and (min-width: 600px){
+  .contact {
+    background-color: #119da4;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .contact-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0px;
+    padding-top: 20px;
+  }
+
+  .contact p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: left;
+  }
+
+  .contact ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  .contact ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 25px;
+  }
+}
+
+/** FOOTER ICONS **/
+
+/** Mobile icon size **/
+
+@media only screen and (max-width: 500px) {
+
+  [class^="icon"] {
+    background-position:-50px 0px;
+    height:35px;
+    width:35px;
+  }
+}
+
+/** Tablets icon size **/
+
+@media all and (min-width: 600px){
 
   [class^="icon"] {
     background-position:-32px 0px;
     height:45px;
-    width:45px;}
+    width:45px;
   }
+}
 
-  /*** Mobile icon size ***/
+/** Desktop icon size **/
 
-  @media only screen and (min-width: 10px) and (max-width: 767px) {
+@media only screen and (min-width: 850px){
 
-    body {min-width:10px;}
-
-    [class^="icon"] {
-      background-position:-50px 0px;
-      height:35px;
-      width:35px;}
+  [class^="icon"] {
+    background-position:-20px 0;
+    height:60px;
+    width:60px;
   }
+}
 
-/*** ABOUT ***/
+/** Portfolio **/
 
-#about h2 {
-  font-family: 'Nunito', sans-serif;
-  font-size: 42px;
-  font-weight: bold;
+.portfolio img{
+  max-width: 100%;
   height: auto;
-  padding: 5px;
-  margin: 0;
-  text-align: center;
-  background: #fc52e8
 }
 
-#about p {
-  color: #666699;
-  font-size: 20px;
-  line-height: 40px;
-  padding-top: 5px;
-  padding-bottom: 20px;
-  margin: 5px;
+.statement{
+  background-color: #119da4;
 }
 
-/*** SERVICES ***/
-
-#services {
-  background: #ffffff;
-  line-height: 40px;
-  padding-top: 25px;
-  text-align: center;
-}
-
-#services ul{
-  list-style-type: none;
-}
-
-#services img {
-  display: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-  padding-bottom: 30px;
-}
-
-#services h3 {
-  font-size: 24px;
-  line-height: 32px;
-  margin: auto;
-  width: auto;
-}
-
-#services p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.emphasis {
-  background: #fc52e8;
-}
-
-
-
-/** HOME BUTTON **/
-
-.home{
-  text-decoration: none;
-  color: #666699;
-  padding-left: 35px;
-}
-
-/** Portfolio Page **/
-
-.navbar {
-  float: left;
-  background: #ffffff;
-  width: 100%;
-}
-
-.navbar ul li{
-  display: block;
-  text-align: left;
-  font-size: auto;
-  font-weight: normal;
-  padding-left: 0px;
-}
-
-.top{
-  text-decoration: none;
-  color: #666699;
-  padding-left: 35px;
-}
 
 /** History **/
 
