@@ -457,6 +457,10 @@ header {
   background-color: #119da4;
 }
 
+.statement p{
+  padding: 10px;
+}
+
 
 /** History **/
 
