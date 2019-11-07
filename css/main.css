@@ -126,8 +126,8 @@ header {
   nav{
     background-color: #040404;
     display: flex;
-    flex-flow: column;
     font-size: 20px;
+    justify-content: center;
   }
 
   nav ul li {
@@ -148,7 +148,7 @@ header {
 @media all and (min-width: 600px){
 
   nav {
-    background-color: #119da4;
+    background-color: #040404;
     font-size: 25px;
     display: flex;
     flex-flow: row wrap;
@@ -169,7 +169,7 @@ header {
   }
 
   .menu-hover a:hover{
-    background: #040404;
+    background: #0C7489;
   }
 }
 
@@ -214,6 +214,16 @@ header {
     border: solid black;
     padding: 10px;
   }
+
+  .middle-box{
+    background-color: #D7D9CE;
+    box-sizing: content-box;
+    color: #000000;
+    width: 90%;
+    height: 100%;
+    border: solid black;
+    padding: 10px;
+  }
 }
 
 /** SERVICES: TABLETS **/
@@ -244,7 +254,18 @@ header {
   }
 
   .box{
+    background-color: #119DA4;
     box-sizing: content-box;
+    width: 97%;
+    height: 100%;
+    border: solid black;
+    padding: 10px;
+  }
+
+  .middle-box{
+    background-color: #D7D9CE;
+    box-sizing: content-box;
+    color: #000000;
     width: 97%;
     height: 100%;
     border: solid black;
@@ -273,6 +294,16 @@ header {
 
   .box{
     box-sizing: content-box;
+    width: 30%;
+    height: 90%;
+    border: solid black;
+    border-width: 10px;
+  }
+
+  .middle-box{
+    background-color: #D7D9CE;
+    box-sizing: content-box;
+    color: #000000;
     width: 30%;
     height: 90%;
     border: solid black;
@@ -313,7 +344,7 @@ header {
   .intro{
     background-color: #040404;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
   }
 
@@ -337,21 +368,26 @@ header {
 @media all and (min-width: 850px){
   .intro{
     background-color: #040404;
-    display: flex;
+    display: inline-flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     padding: 20px 10px 10px 20px;
   }
 
   .intro img{
-    width: 50%;
+    width: 20%;
     height:auto;
     padding: 15px;
   }
 
   .intro p{
+    font-size: 24px;
     padding-top: 10px;
     line-height: 55px;
+  }
+
+  .intro a:hover{
+    background-color: #0C7489;
   }
 }
 
