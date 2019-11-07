@@ -397,6 +397,7 @@ header {
 
 @media all and (max-width: 599px){
   .contact {
+    background-color: #119DA4;
     display: flex;
   }
 
@@ -487,17 +488,123 @@ header {
 
 /** Portfolio **/
 
-.portfolio img{
-  max-width: 100%;
-  height: auto;
+/** MOBILES: PORTFOLIO **/
+
+@media all and (max-width: 599px){
+
+  .portfolio{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .portfolio-heading{
+    background-color: #040404;
+  }
+
+  .portfolio-heading h2{
+    text-align: center;
+  }
+
+  .portfolio img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .portfolio h2{
+    padding-left: 0px;
+  }
+
+  .statement{
+    background-color: #119da4;
+  }
+
+  .statement p{
+    padding: 10px;
+  }
 }
 
-.statement{
-  background-color: #119da4;
+/** TABLETS: PORTFOLIO **/
+
+@media all and (min-width: 600px){
+
+  .portfolio{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+  }
+
+  .portfolio-heading{
+    background-color: #040404;
+  }
+
+  .portfolio-heading h2{
+    text-align: center;
+  }
+
+  .portfolio-segment{
+    padding: 25px;
+  }
+
+  .portfolio img{
+    width: 80%;
+    height: auto;
+  }
+
+  .portfolio h2{
+    align-self: left;
+    padding-left: 0px;
+  }
+
+  .statement{
+    background-color: #119da4;
+  }
+
+  .statement p{
+    padding: 10px;
+  }
 }
 
-.statement p{
-  padding: 10px;
+/** DESKTOPS: PORTFOLIO **/
+
+@media all and (min-width: 801px){
+
+  .portfolio{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .portfolio-heading{
+    background-color: #040404;
+  }
+
+  .portfolio-heading h2{
+    text-align: center;
+  }
+
+  .portfolio img{
+    width: 500px;
+    height: 200px;
+  }
+
+  .portfolio h2{
+    align-self: left;
+    padding-left: 0px;
+  }
+
+  .statement{
+    background-color: #119da4;
+  }
+
+  .statement p{
+    padding: 10px;
+  }
 }
 
 
