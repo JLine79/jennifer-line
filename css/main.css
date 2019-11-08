@@ -610,33 +610,51 @@ header {
 
 /** History **/
 
+.link-hover a:hover{
+  background-color: #040404;
+}
+
+.history{
+
+}
+
 .history p{
+  padding-left: 20px;
   text-align: left;
 }
 
+.history h3{
+  font-size: 25px;
+  padding-left: 20px;
+  padding-top: 45px;
+}
+
 .history-icon {
-  float: left;
   padding-right: 15px;
   padding-top: 25px;
   padding-left: 15px;
 }
 
-#education, #data, #projectmgt, #facilitation, #people, #housing {
-  height: auto;
-  padding-left: 25px;
-  text-align: left;
+.history-section{
+  background-color: #ffffff;
+  color: #000000;
+  display: inline-flex;
+  justify-content: flex-start;
+  margin: 10px;
+  padding: 20px;
+  width: 99%;
 }
 
-#education, #data, #projectmgt, #facilitation, #people, #housing img{
-  padding-top: 25px;
+.top{
+  margin: 20px;
+  padding: 20px;
 }
 
-#education ul{
-  list-style-type: disc;
-  text-align: left;
-  padding-left: 75px;
+.home{
+  margin: 20px;
+  padding: 20px;
 }
 
-#data, #facilitation, #housing{
-  background-color: white;
+.center{
+  text-align: center;
 }
