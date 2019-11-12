@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/** MOBILES **/
+/** MOBILES: BASE STYLES **/
 
 @media all and (max-width: 599px){
   body {
@@ -18,7 +18,7 @@
   }
 }
 
-/** TABLET & DESKTOP **/
+/** TABLET & DESKTOP: BASE STYLES **/
 
 @media all and (min-width: 600px){
 
@@ -38,7 +38,23 @@ body a {
   color:#d7d9ce;
 }
 
-/*** HEADER ***/
+/** DESKTOPS: HEADER **/
+
+@media all and (min-width: 850px){
+
+  header {
+    text-align: center;
+    background-color: #000000;
+    padding: 15px;
+  }
+
+  header img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/** TABLETS: HEADER **/
 
 @media all and (min-width: 600px){
 
@@ -54,7 +70,7 @@ body a {
   }
 }
 
-/** HEADER MOBILES **/
+/** MOBILES: HEADER **/
 
 @media all and (max-width: 599px){
 
@@ -65,13 +81,13 @@ body a {
   }
 
   header img{
-    width: 340px;
+    width: 300px;
     height: auto;
-    text-align: center;
+    text-align: left;
   }
 }
 
-/** Headings: MOBILES **/
+/** MOBILES: Headings **/
 
 @media all and (max-width: 599px){
   h1{
@@ -92,7 +108,7 @@ body a {
   }
 }
 
-/** HEADINGS: Tablets **/
+/** TABLETS: HEADINGS **/
 
 @media all and (min-width: 600px){
 
@@ -114,7 +130,7 @@ body a {
   }
 }
 
-/** HEADINGS: Desktops **/
+/** DESKTOPS: HEADINGS **/
 
 @media all and (min-width: 850px){
 
@@ -146,7 +162,7 @@ body a {
 
 /** NAVIGATION **/
 
-/** MOBILES **/
+/** MOBILES: NAVIGATION **/
 
 @media all and (max-width: 599px){
 
@@ -231,9 +247,17 @@ body a {
 
 /** HOME PAGE: SERVICES **/
 
-/** SERVICES: MOBILES **/
+/** MOBILES: SERVICES **/
 
 @media all and (max-width: 599px){
+
+  .table{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
 
   .services{
     display: flex;
@@ -282,7 +306,7 @@ body a {
   }
 }
 
-/** SERVICES: TABLETS **/
+/** TABLETS: SERVICES **/
 
 @media all and (min-width: 600px){
   .services{
@@ -296,17 +320,6 @@ body a {
   .services ul{
     list-style-type: none;
     padding-left: 0px;
-  }
-
-  .services img{
-    padding: 5px;
-    align-self: center;
-  }
-
-  .third-width{
-    line-height: 40px;
-    text-align: center;
-    padding: 0px;
   }
 
   .box{
@@ -329,47 +342,51 @@ body a {
   }
 }
 
-/** SERVICES: DESKTOPS **/
+/** DESKTOPS & lANDSCAPE TABLETS: SERVICES **/
 
 @media all and (min-width: 850px){
 
-  .services{
+  .table{
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    width: 100%;
   }
 
-  .third-width{
-    align-self: flex-start;
-    flex-basis: 30%;
-    line-height: 45px;
-    padding-left: 30px;
+  .services{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .services h3{
+    font-size: 25px;
+  }
+
+  .services ul{
+    list-style-type: none;
+    padding-left: 0px;
+  }
+
+  .services img{
+    padding: 5px;
   }
 
   .box{
-    box-sizing: content-box;
-    width: 30%;
-    height: 90%;
+    background-color: #119DA4;
     border: solid black;
-    border-width: 10px;
+    width: 100%;
   }
 
   .middle-box{
     background-color: #D7D9CE;
-    box-sizing: content-box;
     color: #000000;
-    width: 30%;
-    height: 90%;
-    border: solid black;
-    border-width: 10px;
   }
 }
 
 /** HOMEPAGE: INTRO **/
 
-/** INTRO: MOBILES **/
+/** MOBILES: INTRO **/
 
 @media all and (max-width: 599px){
 
@@ -394,7 +411,7 @@ body a {
   }
 }
 
-/** INTRO: TABLETS **/
+/** TABLETS: INTRO **/
 
 @media all and (min-width: 600px){
   .intro{
@@ -419,7 +436,7 @@ body a {
   }
 }
 
-/** INTRO: DESKTOP **/
+/** DESKTOPS: INTRO **/
 
 @media all and (min-width: 850px){
   .intro{
@@ -431,13 +448,14 @@ body a {
   }
 
   .intro img{
+    flex-basis: 40%;
     width: 20%;
     height:auto;
     padding: 15px;
   }
 
   .intro p{
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 10px;
     line-height: 55px;
   }
@@ -449,7 +467,7 @@ body a {
 
 /*** CONTACT ***/
 
-/** CONTACT: MOBILES **/
+/** MOBILES: CONTACT **/
 
 @media all and (max-width: 599px){
   .contact {
@@ -472,7 +490,7 @@ body a {
   }
 }
 
-/** CONTACT: DESKTOP **/
+/** DESKTOP: CONTACT **/
 
 @media all and (min-width: 600px){
   .contact {
@@ -633,6 +651,7 @@ body a {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin: 0px;
     width: 100%;
   }
 
@@ -645,8 +664,8 @@ body a {
   }
 
   .portfolio img{
-    width: 500px;
-    height: 200px;
+    width: 100%;
+    height: auto;
   }
 
   .portfolio h2{
@@ -679,14 +698,16 @@ body a {
 }
 
 .history p{
-  padding-left: 20px;
   text-align: left;
 }
 
 .history h3{
-  color: #D7D9CE;
+  background-color: #040404;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 35px;
+  padding: 20px;
+  margin: 20px;
+  text-decoration: underline;
 }
 
 .history-icon {
