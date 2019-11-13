@@ -16,6 +16,10 @@
     line-height: 35px;
     padding: 5px;
   }
+
+  p {
+    padding-left: 5px;
+  }
 }
 
 /** TABLET & DESKTOP: BASE STYLES **/
@@ -28,7 +32,10 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 45px;
-    padding: 5px;
+  }
+
+  p{
+    padding-left: 20px;
   }
 }
 
@@ -37,6 +44,8 @@ body a {
   text-decoration: none;
   color:#d7d9ce;
 }
+
+
 
 /** DESKTOPS: HEADER **/
 
@@ -241,7 +250,7 @@ body a {
   }
 
   .menu-hover a:hover{
-    background: #040404;
+    background: #0C7489;
   }
 }
 
@@ -277,13 +286,6 @@ body a {
 
   .services img{
     padding: 5px;
-  }
-
-  .third-width{
-    align-self: flex-start;
-    flex-basis: 100%;
-    line-height: 30px;
-    padding: 0px;
   }
 
   .box{
@@ -684,41 +686,6 @@ body a {
 
 /** History **/
 
-/** DESKTOPS: HISTORY **/
-
-@media all and (min-width: 850px){
-
-.link-hover a:hover{
-  background-color: #040404;
-}
-
-.history{
-  display: inline-flex;
-  flex-flow: row wrap;
-}
-
-.history p{
-  text-align: left;
-}
-
-.history h3{
-  background-color: #040404;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 35px;
-  padding: 20px;
-  margin: 20px;
-  text-decoration: underline;
-}
-
-.history-icon {
-  background-color: #d7d9ce;
-  padding: 25px;
-  margin: 25px;
-  width:150px;
-  height:150px;
-}
-}
-
 /** MOBILES: HISTORY **/
 
 @media all and (max-width: 599px){
@@ -727,6 +694,27 @@ body a {
     display: inline-flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+  }
+
+  .history-nav nav {
+    background-color: #0C7489;
+    font-size: 18px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .history-nav nav ul li {
+    padding-left: 10px;
+  }
+
+  .history-nav nav ul li a {
+    font-size: auto;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: justify;
   }
 
   .history p{
@@ -759,7 +747,29 @@ body a {
     padding: 25px;
   }
 
-  .history-nav{}
+  .history-nav nav {
+    background-color: #0C7489;
+    display: flex;
+    font-size: 16px;
+    }
+
+  .history-nav ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .history-nav nav ul li {
+    justify-content: flex-start;
+    padding: 5px;
+    width: 50%;
+  }
+
+  .history-nav nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: left;
+  }
 
   .history h3{
     color: #D7D9CE;
@@ -775,6 +785,65 @@ body a {
     margin: auto;
   }
 }
+
+/** DESKTOPS: HISTORY **/
+
+@media all and (min-width: 850px){
+
+.link-hover a:hover{
+  background-color: #040404;
+}
+
+.history{
+  display: inline-flex;
+  flex-flow: row wrap;
+  padding: 5px;
+}
+
+.history-nav nav {
+  background-color: #0C7489;
+  font-size: 22px;
+  }
+
+.history-nav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.history-nav nav ul li {
+  justify-content: flex-start;
+  padding: 5px 5px 15px 5px;
+  width: 30%;
+}
+
+.history-nav nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.history p{
+  text-align: left;
+}
+
+.history h3{
+  background-color: #040404;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 35px;
+  padding: 20px;
+  text-decoration: underline;
+}
+
+.history-icon {
+  background-color: #d7d9ce;
+  padding: 25px;
+  margin: 25px;
+  width:150px;
+  height:150px;
+}
+}
+
 
 .top{
   margin: 20px;
