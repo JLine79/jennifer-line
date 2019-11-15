@@ -8,7 +8,7 @@
 /** MOBILES: BASE STYLES **/
 
 @media all and (max-width: 599px){
-  body {
+  body{
     background: #13505B;
     color:#d7d9ce;
     font-family: 'Montserrat', sans-serif;
@@ -17,7 +17,7 @@
     padding: 5px;
   }
 
-  p {
+  p{
     padding-left: 5px;
   }
 }
@@ -26,7 +26,7 @@
 
 @media all and (min-width: 600px){
 
-  body {
+  body{
     background: #13505B;
     color:#D7D9CE;
     font-family: 'Montserrat', sans-serif;
@@ -39,27 +39,26 @@
   }
 }
 
-body a {
+body a{
   font-weight: bold;
   text-decoration: none;
   color:#d7d9ce;
 }
 
+/** MOBILES: HEADER **/
 
+@media all and (max-width: 599px){
 
-/** DESKTOPS: HEADER **/
-
-@media all and (min-width: 850px){
-
-  header {
-    text-align: center;
+  header{
     background-color: #000000;
+    text-align: center;
     padding: 15px;
   }
 
   header img{
-    width: 100%;
+    width: 300px;
     height: auto;
+    text-align: left;
   }
 }
 
@@ -67,7 +66,7 @@ body a {
 
 @media all and (min-width: 600px){
 
-  header {
+  header{
     background-color: #000000;
     text-align: center;
     padding: 15px;
@@ -79,20 +78,19 @@ body a {
   }
 }
 
-/** MOBILES: HEADER **/
+/** DESKTOPS: HEADER **/
 
-@media all and (max-width: 599px){
+@media all and (min-width: 850px){
 
-  header {
-    background-color: #000000;
+  header{
     text-align: center;
+    background-color: #000000;
     padding: 15px;
   }
 
   header img{
-    width: 300px;
+    width: 100%;
     height: auto;
-    text-align: left;
   }
 }
 
@@ -164,7 +162,7 @@ body a {
 /** To hide elements on smaller screens **/
 
 @media all and (max-width: 600px){
-  .mobhide {
+  .mobhide{
     display: none;
   }
 }
@@ -186,7 +184,7 @@ body a {
     padding-left: 0px;
   }
 
-  nav ul li {
+  nav ul li{
     display: flex;
     justify-content: flex-start;
     padding: 10px;
@@ -204,18 +202,18 @@ body a {
 
 @media all and (min-width: 600px){
 
-  nav {
+  nav{
     background-color: #0C7489;
     font-size: 25px;
   }
 
-  nav ul li {
+  nav ul li{
     display: inline-flex;
     justify-content: center;
     width: 30%;
   }
 
-  nav ul li a {
+  nav ul li a{
     font-size: auto;
     font-weight: bold;
     text-decoration: none;
@@ -228,7 +226,7 @@ body a {
 
 @media all and (min-width: 850px){
 
-  nav {
+  nav{
     background-color: #0C7489;
     font-size: 25px;
     display: flex;
@@ -236,12 +234,12 @@ body a {
     justify-content: center;
   }
 
-  nav ul li {
+  nav ul li{
     display: inline-flex;
     padding: 30px;
   }
 
-  nav ul li a {
+  nav ul li a{
     font-size: auto;
     font-weight: bold;
     text-decoration: none;
@@ -472,21 +470,21 @@ body a {
 /** MOBILES: CONTACT **/
 
 @media all and (max-width: 599px){
-  .contact {
+  .contact{
     background-color: #119DA4;
     display: flex;
   }
 
-  .contact-img {
+  .contact-img{
     max-width: 100%;
     height: auto;
   }
 
-  .contact ul {
+  .contact ul{
     list-style-type: none;
   }
 
-  .contact ul li {
+  .contact ul li{
     display: inline-block;
     padding: 10px;
   }
@@ -495,32 +493,32 @@ body a {
 /** DESKTOP: CONTACT **/
 
 @media all and (min-width: 600px){
-  .contact {
+  .contact{
     background-color: #119da4;
     text-align: center;
     padding-top: 20px;
   }
 
-  .contact-img {
+  .contact-img{
     max-width: 100%;
     height: auto;
     margin-top: 0px;
     padding-top: 20px;
   }
 
-  .contact p {
+  .contact p{
     font-weight: normal;
     font-size: 18px;
     line-height: 50px;
     text-align: left;
   }
 
-  .contact ul {
+  .contact ul{
     list-style: none;
     text-align: center;
   }
 
-  .contact ul li {
+  .contact ul li{
     display: inline-block;
     text-align: center;
     padding: 25px;
@@ -531,9 +529,9 @@ body a {
 
 /** Mobile icon size **/
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 599px){
 
-  [class^="icon"] {
+  [class^="icon"]{
     background-position:-50px 0px;
     height:35px;
     width:35px;
@@ -544,7 +542,7 @@ body a {
 
 @media all and (min-width: 600px){
 
-  [class^="icon"] {
+  [class^="icon"]{
     background-position:-32px 0px;
     height:45px;
     width:45px;
@@ -555,7 +553,7 @@ body a {
 
 @media only screen and (min-width: 850px){
 
-  [class^="icon"] {
+  [class^="icon"]{
     background-position:-20px 0;
     height:60px;
     width:60px;
@@ -696,7 +694,7 @@ body a {
     justify-content: space-between;
   }
 
-  .history-nav nav {
+  .history-nav nav{
     background-color: #0C7489;
     font-size: 18px;
     display: flex;
@@ -705,11 +703,11 @@ body a {
     width: 100%;
   }
 
-  .history-nav nav ul li {
+  .history-nav nav ul li{
     padding-left: 10px;
   }
 
-  .history-nav nav ul li a {
+  .history-nav nav ul li a{
     font-size: auto;
     font-weight: bold;
     text-decoration: none;
@@ -729,7 +727,7 @@ body a {
     padding-left: 25px;
   }
 
-  .history-icon {
+  .history-icon{
     background-color: #d7d9ce;
     width:100px;
     height:100px;
@@ -747,24 +745,24 @@ body a {
     padding: 25px;
   }
 
-  .history-nav nav {
+  .history-nav nav{
     background-color: #0C7489;
     display: flex;
     font-size: 16px;
     }
 
-  .history-nav ul {
+  .history-nav ul{
     display: flex;
     flex-flow: row wrap;
   }
 
-  .history-nav nav ul li {
+  .history-nav nav ul li{
     justify-content: flex-start;
     padding: 5px;
     width: 50%;
   }
 
-  .history-nav nav ul li a {
+  .history-nav nav ul li a{
     font-weight: bold;
     text-decoration: none;
     text-transform: capitalize;
@@ -778,7 +776,7 @@ body a {
     padding-left: 25px;
   }
 
-  .history-icon {
+  .history-icon{
     background-color: #d7d9ce;
     width:100px;
     height:100px;
@@ -790,60 +788,59 @@ body a {
 
 @media all and (min-width: 850px){
 
-.link-hover a:hover{
-  background-color: #040404;
-}
-
-.history{
-  display: inline-flex;
-  flex-flow: row wrap;
-  padding: 5px;
-}
-
-.history-nav nav {
-  background-color: #0C7489;
-  font-size: 22px;
+  .link-hover a:hover{
+    background-color: #040404;
   }
 
-.history-nav ul {
-  display: flex;
-  flex-flow: row wrap;
-}
+  .history{
+    display: inline-flex;
+    flex-flow: row wrap;
+    padding: 5px;
+  }
 
-.history-nav nav ul li {
-  justify-content: flex-start;
-  padding: 5px 5px 15px 5px;
-  width: 30%;
-}
+  .history-nav nav{
+    background-color: #0C7489;
+    font-size: 22px;
+    }
 
-.history-nav nav ul li a {
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: capitalize;
-  text-align: left;
-}
+  .history-nav ul{
+    display: flex;
+    flex-flow: row wrap;
+  }
 
-.history p{
-  text-align: left;
-}
+  .history-nav nav ul li{
+    justify-content: flex-start;
+    padding: 5px 5px 15px 5px;
+    width: 30%;
+  }
 
-.history h3{
-  background-color: #040404;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 35px;
-  padding: 20px;
-  text-decoration: underline;
-}
+  .history-nav nav ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: left;
+  }
 
-.history-icon {
-  background-color: #d7d9ce;
-  padding: 25px;
-  margin: 25px;
-  width:150px;
-  height:150px;
-}
-}
+  .history p{
+    text-align: left;
+  }
 
+  .history h3{
+    background-color: #040404;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 35px;
+    padding: 20px;
+    text-decoration: underline;
+  }
+
+  .history-icon{
+    background-color: #d7d9ce;
+    padding: 25px;
+    margin: 25px;
+    width:150px;
+    height:150px;
+  }
+}
 
 .top{
   margin: 20px;
