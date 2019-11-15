@@ -406,6 +406,8 @@ body a{
 
   .intro h3{
     font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+    padding-left: 15px;
   }
 
   .intro p{
